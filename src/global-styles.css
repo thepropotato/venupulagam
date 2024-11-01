@@ -1,0 +1,139 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    letter-spacing: 1px;
+}
+
+*::-moz-selection {
+    background-color: rgba(36, 36, 36, 0.596);
+}
+
+*::selection {
+    background-color: rgba(36, 36, 36, 0.596);
+}
+
+@font-face {
+    font-family: cima;
+    src: url('./fonts/used/Cima.otf');
+}
+
+@font-face {
+    font-family: tomorrow;
+    src: url('./fonts/used/Tomorrow.ttf');
+}
+
+@font-face {
+    font-family: signature;
+    src: url('./fonts/used/Breathney.ttf');
+}
+
+@font-face {
+    font-family: qr-code;
+    src: url(./fonts/used/PASKOWY.ttf);
+}
+
+@font-face {
+    font-family: code;
+    src: url(./fonts/used/Fira\ code.ttf);
+}
+
+@font-face {
+    font-family: modern world;
+    src: url(./fonts/used/Modern\ World.otf);
+}
+
+@font-face {
+    font-family: space grotesk;
+    src: url(./fonts/used/SpaceGrotesk.ttf);
+}
+
+@font-face {
+    font-family: apple;
+    src: url(./fonts/used/SF-Pro-Display-Bold.otf);
+}
+
+@font-face {
+    font-family: brigends;
+    src: url(./fonts/used/Brigends\ Expanded.otf);
+}
+
+@font-face {
+    font-family: storm gust;
+    src: url(./fonts/used/Storm\ Gust.ttf);
+}
+
+@font-face {
+    font-family: proelium;
+    src: url(./fonts/used/Proelium.otf);
+}
+
+#root {
+    z-index: -1;
+}
+
+#body-container{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    height: calc(600dvh - 2rem);
+    width: calc(100dvw - 2rem);
+    gap: 2rem;
+}
+
+.container {
+    background-color: black;
+    height: calc(100dvh - 2rem);
+    width: calc(100dvw - 2rem);
+    border-radius: 1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+}
+
+body::-webkit-scrollbar, *::-webkit-scrollbar{
+    width: 3px;
+    height: 3px;
+    background-color: transparent;
+}
+
+body::-moz-scrollbar, *::-moz-scrollbar {
+    width: 3px;
+    height: 3px;
+    background-color: transparent;
+}
+
+body::-webkit-scrollbar-thumb,  *::-webkit-scrollbar-thumb {
+    cursor: pointer;
+    background-color: rgba(251, 251, 251, 0.5);
+}
+
+body::-moz-scrollbar-thumb,  *::-moz-scrollbar-thumb {
+    cursor: pointer;
+    background-color: rgba(251, 251, 251, 0.5);
+}
+
+body::-webkit-scrollbar-thumb:hover, *::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+body::-moz-scrollbar-thumb:hover, *::-moz-scrollbar-thumb:hover {
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+#image-menu-row::-webkit-scrollbar{
+    width: 0px;
+    height: 0px;
+}
+
+@media (orientation:portrait) {
+    #terminal-options::-webkit-scrollbar {
+        height: 0px;
+    }
+}

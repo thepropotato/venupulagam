@@ -2,42 +2,185 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <link rel="icon" href="%PUBLIC_URL%/logo.jpg" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
     <meta
       name="description"
-      content="Web site created using create-react-app"
+      content="Portflio by Venu Pulagam"
     />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo.jpg" />
+    <title>Venu Pulagam</title>
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
+    <script type="module" src="https://md-block.verou.me/md-block.js"></script>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <style>
+
+      @font-face {
+          font-family: tomorrow;
+          src: url('./Tomorrow.ttf');
+      }
+
+      body{
+          background-color: black;
+          height: 100dvh;
+          overflow: hidden;
+          padding: 1rem;
+          display: flex;
+          flex-direction: column;
+      }
+
+      #pre-loader {
+          background-color: black;
+          overflow: hidden;
+          color: white;
+          height: 100dvh;
+          width: 100dvw;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 1rem;
+          flex-direction: column;
+          z-index: 0;
+          animation-delay: 2.5s;
+      }
+
+      #logo-image {
+          height: 20vh;
+          animation: showLoader 1s linear forwards;
+      }
+
+      @keyframes showLoader {
+          0% {
+              clip-path: inset(100% 0 0 0);
+          } 100% {
+              clip-path: inset(0 0 0 0);
+          }
+      }
+
+      @keyframes hideLoader {
+        0% {
+          transform: translate(-50%, -50%);
+        } 100% {
+          transform: translate(-50%, 100dvw);
+          display: none;
+        }
+      }
+
+      #progress {
+          font-size: 1rem;
+          font-family: tomorrow;
+          font-weight: normal;
+      }
+
+      #background-loader {
+        height: 1rem;
+        aspect-ratio: 1/1;
+        background-color: white;
+        position: fixed;
+        top: calc(50% - 0.5rem);
+        left: calc(50% - 0.5rem);
+        transform: translate(-50%, -50%) scale(1);
+        mix-blend-mode: difference;
+        z-index: 1;
+        border-radius: 100%;
+        opacity: 0;
+      }
+
+      @keyframes scaleUp {
+          0% {
+              transform: scale(0);
+              opacity: 0;
+          } 
+          100% {
+              transform: scale(150);
+              opacity: 1;
+          }
+      }
+
+      @keyframes hideBackgroundLoader {
+          0% {
+              transform: translate(calc(-50% + 1rem), -50%) scale(150);
+              opacity: 1;
+          } 
+          100% {
+              transform: translate(calc(-50% + 1rem), calc(100dvw + 2rem)) scale(0);
+              opacity: 1;
+              display: none;
+          }
+      }
+
+      .show-background-loader {
+        animation: scaleUp 1s linear forwards 1s;
+      }
+
+      .hide-background-loader {
+        animation: hideBackgroundLoader 2s linear forwards;
+      }
+    </style>
+
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
+
+    <div id="background-loader"></div>
+
+    <div id="pre-loader">
+      <img id="logo-image" src="logo.jpg" alt="Logo"/>
+      <h1 id="progress"><span id="progress-percentage">0</span>%</h1>
+    </div>
+
     <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+    <script>
+      const progress = document.getElementById('progress-percentage');
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
+      function incrementProgress() {
+          const progress = document.getElementById('progress-percentage');
+          let percentage = 0;
+          const duration = 1500;
+          const interval = 10;
+          const totalSteps = duration / interval;
+          const incrementValue = 100 / totalSteps;
+
+          const progressInterval = setInterval(() => {
+              if (percentage < 100) {
+                  percentage += incrementValue;
+                  progress.textContent = Math.round(percentage);
+              } else {
+                  clearInterval(progressInterval);
+              }
+          }, interval);
+      }
+
+      incrementProgress();
+
+      const preLoader = document.getElementById('pre-loader');
+      const backgroundLoader = document.getElementById('background-loader');
+
+      backgroundLoader.classList.add('show-background-loader');
+
+      window.onload = () => {
+        preLoader.style.animation = 'hideLoader 2s linear forwards 2.5s';
+
+        setTimeout(() => {
+          backgroundLoader.classList.remove('show-background-loader');
+          backgroundLoader.classList.add('hide-background-loader');
+        }, 2500);
+
+        setTimeout(() => {
+            const rootDiv = document.getElementById('root');
+            rootDiv.style.zIndex = 1;
+        }, 4500);
+      };
+    </script>
+
   </body>
 </html>

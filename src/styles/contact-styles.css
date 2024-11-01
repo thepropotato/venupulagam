@@ -1,0 +1,384 @@
+#contact-container {
+    background-color: black;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    position: relative;
+}
+
+#contact-wrapper {
+    position: relative;
+}
+
+#contact-credits {
+    height: calc(50% - 4rem);
+    width: calc(100% - 4rem);
+    padding: 2rem;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    cursor: default;
+}
+
+#contact-credits > *::selection {
+    background-color: transparent;
+}
+
+.quote {
+    font-family: brigends;
+    font-weight: normal;
+    text-transform: uppercase;
+    font-size: 4rem;
+    line-height: 4rem;
+    background: -webkit-linear-gradient(top, white, rgba(0, 0, 0, 0));
+    background: linear-gradient(to bottom, white, rgba(0, 0, 0, 0));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.quote-overlay {
+    font-family: storm gust;
+    color: rgba(150, 150, 150, 0.5);
+    text-transform: uppercase;
+    font-size: 2rem;
+    position: absolute;
+    -webkit-filter: drop-shadow(0px 0px 1rem black);
+    filter: drop-shadow(0px 0px 1rem black);
+}
+
+#contact-main {
+    height: calc(50% - 4rem);
+    width: calc(80% - 4rem);
+    padding: 2rem;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    gap: 20%;
+}
+
+#message {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: 1rem;
+    height: 20%;
+}
+
+#message input {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    font-size: 1.5rem;
+    background-color: rgb(65, 65, 65);
+    padding: 1rem 1.5rem;
+    border-radius: 3rem 0rem 0rem 3rem;
+    border: none;
+    color: rgb(165, 165, 165);
+    font-family: space grotesk;
+}
+
+#contact-name {
+    -webkit-flex: 0 !important;
+    -ms-flex: 0 !important;
+    flex: 0 !important;
+}
+
+#contact-text {
+    border-radius: 0rem !important;
+}
+
+#message input:focus { 
+    outline: none;
+}
+
+#message button {
+    padding: 1rem;
+    font-size: 2rem;
+    background-color: rgba(150, 150, 150, 0.5);
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border: none;
+    border-radius: 0rem 3rem 3rem 0rem;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#message button:hover {
+    cursor: pointer;
+    color: orangered;
+    background-color: black;
+    box-shadow: 0 0 0 0.05rem inset orangered;
+}
+
+#socials {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+#socials a {
+    background-color: rgba(255, 68, 0, 0.677);
+    height: 2rem;
+    width: 2rem;
+    padding: 1rem;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    font-size: 2rem;
+    border-radius: 100%;
+    position: relative;
+    -webkit-transition: all 0.15s ease;
+    transition: all 0.15s ease;
+}
+
+#socials a:hover {
+    cursor: pointer;
+    background-color: black;
+    color: orangered;
+}
+
+#socials a::after {
+    content: attr(name);
+    font-size: 0.75rem;
+    position: absolute;
+    align-self: center;
+    margin-top: 2.25rem;
+    opacity: 0;
+    -webkit-transition: all 0.15s ease-in-out;
+    transition: all 0.15s ease-in-out;
+    color: white;
+    background-color: transparent;
+    font-family: space grotesk;
+    color: orangered;
+}
+
+#socials a:hover::after {
+    opacity: 1;
+    -webkit-transform: translate(0, 2rem);
+    transform: translate(0, 2rem);
+}
+
+footer {
+    color: rgb(65, 65, 65);
+    font-family: space grotesk;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+#sign {
+    font-family: signature;
+    font-weight: bold;
+}
+
+#success-message {
+    background-color: rgb(165, 165, 165);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    z-index: 999;
+    padding: 1rem;
+    border-radius: 1rem;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    font-family: 'space grotesk';
+    width: calc(22.5% - 2rem);
+    height: calc(50% - 2rem);
+}
+
+#success-message div {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-justify-content: space-evenly;
+    -ms-flex-pack: distribute;
+    justify-content: space-evenly;
+    text-align: center;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+}
+
+#success-message div img {
+    width: 80%;
+}
+
+#close-message {
+    background-color: black;
+    border: none;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    color: rgb(165, 165, 165);
+    font-family: 'space grotesk';
+    font-size: 1rem;    
+    -webkit-transition: all 0.15s ease-in-out;
+    transition: all 0.15s ease-in-out;
+}
+
+#close-message:hover {
+    cursor: pointer;
+    color: orangered;
+}
+
+@media (orientation: portrait) {
+    #contact-container {
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+
+    #contact-credits {
+        height: 30%;
+        width: 100%;
+        gap: 2rem;
+    }
+
+    #contact-main {
+        height: 50%;
+        width: 100%;
+    }
+
+    .quote {
+        font-size: 2rem;
+        text-align: center;
+        line-height: unset;
+    }
+
+    .quote-overlay {
+        font-size: 1rem;
+    }
+
+    #message {
+        -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        height: 50%;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+        width: 100%;
+        -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    }
+
+    #message * {
+        border-radius: 3rem !important;
+        padding: 1.5rem 1rem !important;
+        font-size: 1.125rem !important;
+        -webkit-flex: 1;
+        -ms-flex: 1;
+        flex: 1;
+    }
+
+    #contact-name {
+        -webkit-flex: 1 !important;
+        -ms-flex: 1 !important;
+        flex: 1 !important;
+    }
+
+    #contact-text {
+        border-radius: 3rem 0rem 0rem 3rem !important;
+    }
+
+    #message button {
+        -webkit-flex: 0;
+        -ms-flex: 0;
+        flex: 0;
+        padding: 1.5rem;
+        font-size: 1.5rem !important;
+        border-radius: 0rem 3rem 3rem 0rem !important;
+    }
+
+    #socials a {
+        height: 1rem;
+        width: 1rem;
+    }
+
+    #socials a i {
+        font-size: 1.5rem;
+    }
+
+    #socials a::after {
+        font-size: 0.5rem;
+        margin-top: 0.5rem;
+    }
+
+    footer {
+        font-size: 0.5rem;   
+    }
+
+    #success-message {
+        width: 50%;
+        height: 40%;
+    }
+
+    #success-message div img {
+        width: 100%;
+    }
+}

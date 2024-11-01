@@ -1,0 +1,633 @@
+#about-container{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+#vs-code-container{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    height: 80%;
+    width: 80%;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    border-radius: 1rem;
+    position: relative;
+}
+
+#other-buttons-popup {
+    position: absolute;
+    z-index: 99;
+    width: 40%;
+    display: none;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(175, 175, 175);
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    border-radius: 1rem;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    -webkit-box-shadow: 0px 0px 30px rgb(30, 30, 30);
+    -moz-box-shadow: 0px 0px 30px rgb(30, 30, 30);
+    box-shadow: 0px 0px 30px rgb(30, 30, 30);
+}
+
+#warning-head {
+    background-color: rgb(30, 30, 30);
+    padding: 0.5rem 1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-border-radius: 1rem 1rem 0rem 0rem;
+    -moz-border-radius: 1rem 1rem 0rem 0rem;
+    border-radius: 1rem 1rem 0rem 0rem;
+}
+
+#warning-content {
+    padding: 1rem;
+    background-color: rgb(70, 70, 70);
+    -webkit-border-radius: 0rem 0rem 1rem 1rem;
+    -moz-border-radius: 0rem 0rem 1rem 1rem;
+    border-radius: 0rem 0rem 1rem 1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+#warning-content *{
+    color: rgb(145, 145, 145);
+}
+
+#close-popup-button{
+    background-color: transparent;
+    color: rgb(145, 145, 145);
+    border: none;
+    -webkit-border-radius: 0.15rem;
+    -moz-border-radius: 0.15rem;
+    border-radius: 0.15rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+#close-popup-button:hover {
+    background-color: rgb(120, 15, 15);
+    cursor: pointer;
+}
+
+#header-row{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0.5rem 1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background-color: rgb(30, 30, 30);
+    -webkit-border-radius: 1rem 1rem 0rem 0rem;
+    -moz-border-radius: 1rem 1rem 0rem 0rem;
+    border-radius: 1rem 1rem 0rem 0rem;
+    color: rgb(175, 175, 175);
+}
+
+#window-name {
+    font-size: 0.8rem;
+}
+
+#mac-menu{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    gap: 0.25rem;
+}
+
+#mac-menu span{
+    height: 0.5rem;
+    width: 0.5rem;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+    background-color: red;
+    color: transparent;
+    cursor: default;
+}
+
+#mac-menu span:nth-child(2) {
+    background-color: rgb(250, 165, 0);
+}
+
+#mac-menu span:nth-child(3) {
+    background-color: rgb(0, 176, 0);
+}
+
+#vs-code-window{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+#menu-panel{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 2%;
+    background-color: rgb(50, 50, 50);
+    padding: 1rem;
+    -webkit-border-radius: 0rem 0rem 0rem 1rem;
+    -moz-border-radius: 0rem 0rem 0rem 1rem;
+    border-radius: 0rem 0rem 0rem 1rem;
+    color: rgb(175, 175, 175);
+    border-right: 0.05rem solid rgb(30, 30, 30);
+}
+
+#menu-panel div{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+#menu-panel div span:nth-child(3) {
+    -webkit-transform: scale(1.45);
+    -moz-transform: scale(1.45);
+    -ms-transform: scale(1.45);
+    -o-transform: scale(1.45);
+    transform: scale(1.45);
+}
+
+#menu-panel div span:hover{
+    color: white;
+    cursor: pointer;
+}
+
+#left-panel{
+    min-width: 23%;
+    width: 23%;
+    background-color: rgb(30, 30, 30);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    border-right: 0.05rem solid rgb(50, 50, 50);
+}
+
+#left-panel button {
+    padding: 0.5rem;
+    text-align: start;
+    background-color: transparent;
+    border: none;
+    color: rgb(175, 175, 175);
+}
+
+#left-panel button:nth-child(1){
+    background-color: rgb(50, 50, 50);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+#left-panel button:nth-child(1) span:nth-child(2){
+    font-size: 1rem;
+}
+
+#left-panel button:hover{
+    background-color: rgba(45, 45, 45, 0.5);
+    cursor: pointer;
+}
+
+#right-panel{
+    width: 75%;
+    height: 100%;
+    background-color: rgb(50, 50, 50);
+    -webkit-border-radius: 0rem 0rem 1rem 0rem;
+    -moz-border-radius: 0rem 0rem 1rem 0rem;
+    border-radius: 0rem 0rem 1rem 0rem;
+}
+
+#editor{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    height: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    background-color: rgb(50, 50, 50);
+}
+
+#editor-head {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border-bottom: 0.05rem solid rgb(90, 90, 90);
+}
+
+#run-buttons {
+    padding: 0rem 0.5rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    gap: 0.5rem;
+}
+
+#run-buttons button{
+    color: rgb(175, 175, 175);
+    background-color: transparent;
+    border: none;
+    -webkit-transition: all 0.15s ease-in-out;
+    -moz-transition: all 0.15s ease-in-out;
+    -o-transition: all 0.15s ease-in-out;
+    transition: all 0.15s ease-in-out;
+}
+
+#run-buttons button:hover{
+    cursor: pointer;
+    background-color: rgba(30, 30, 30, 0.5);
+    -webkit-border-radius: 0.05rem;
+    -moz-border-radius: 0.05rem;
+    border-radius: 0.05rem;
+    color: white;
+}
+
+#opened-files {
+    background-color: rgb(50, 50, 50);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    overflow: auto;
+    width: 90%;
+}
+
+.editor-head-button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    text-wrap: nowrap;
+    gap: 0.5rem;
+    position: relative;
+    -webkit-transition: all 0.15s ease-in-out;
+    -moz-transition: all 0.15s ease-in-out;
+    -o-transition: all 0.15s ease-in-out;
+    transition: all 0.15s ease-in-out;
+    color: rgb(175, 175, 175);
+    padding: 0.5rem 1rem;
+    background-color: rgb(60, 60, 60);
+    border: none;
+    border-right: 0.05rem solid rgb(30, 30, 30);
+}
+
+.editor-head-button.active-file {
+    background-color: rgb(30, 30, 30, 0.5);
+}
+
+.editor-head-button button {
+    color: rgb(175, 175, 175);
+    background-color: transparent;
+    border: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+#close-window-button {
+    font-size: 0.8rem;
+    color: white;
+    border: none;
+    -webkit-border-radius: 0.15rem;
+    -moz-border-radius: 0.15rem;
+    border-radius: 0.15rem;
+}
+
+#close-window-button:hover {
+    background-color: rgb(120, 15, 15);
+    cursor: pointer;
+}
+
+.editor-head-button:hover {
+    background-color: rgb(50, 50, 50);
+    cursor: pointer;
+}
+
+#code-editor{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    font-family: code, 'Courier New', Courier, monospace;
+    color: rgb(175, 175, 175);
+    padding: 0.15rem 0rem;
+    font-size: 0.85rem;
+    overflow: auto;
+    height: 100%;
+}
+
+.code-row{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}
+
+.code-row:hover{
+    background-color: rgba(30, 30, 30, 0.5);
+}
+
+.number-column{
+    min-width: 5%;
+    width: 5%;
+    border-right: 0.05rem solid rgb(90, 90, 90);
+    padding: 0.15rem ;
+    text-align: right;
+}
+
+.code-column{
+    width: 80%;
+    background-color: transparent;
+    padding: 0.15rem 0.5rem;
+    text-wrap: nowrap;
+}
+
+.keyword {
+    color: rgb(45, 150, 250);
+}
+
+.string {
+    color: rgb(249, 69, 69);
+}
+
+.punctuation {
+    color: rgb(195, 180, 50);
+}
+
+.comment {
+    color: rgb(90, 150, 10);
+    font-style: italic;
+}
+
+.resume-iframe {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    border: none;
+    height: 100%;
+}
+
+.readme {
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+}
+
+#terminal {
+    border-top: 0.05rem solid rgb(90, 90, 90);
+    height: 50%;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+#terminal-options {
+    border-bottom: 1px solid rgb(90, 90, 90);
+    background-color: rgb(40, 40, 40);
+}
+
+#terminal-options button {
+    padding: 0.75rem;
+    text-transform: uppercase;
+    background-color: transparent;
+    color: rgb(175, 175, 175);
+    border: none;
+    position: relative;
+    font-size: 0.65rem;
+}
+
+#terminal-options button:hover {
+    cursor: pointer;
+    background-color: rgb(30, 30, 30);
+}
+
+#terminal-options button:nth-child(3) {
+    color: rgba(255, 255, 255, 0.85);
+}
+
+#terminal-options button:nth-child(3)::after {
+    position: absolute;
+    content: '';
+    height: 0.1rem;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
+    left: 0px;
+    bottom: 0px;
+}
+
+#terminal-output {
+    -webkit-flex: 1 0 50%;
+    -ms-flex: 1 0 50%;
+    flex: 1 0 50%;
+    background-color: rgb(30, 30, 30);
+    overflow: auto;
+    border-radius: 0rem 0rem 1rem 0rem;
+    padding: 0.5rem;
+    color: rgb(145, 145, 145);
+    font-family: code;
+    font-size: 0.9rem;
+}
+
+.terminal-default {
+    font-weight: bold;
+}
+
+.run-command {
+    color: rgb(35, 100, 160);
+}
+
+/** --------------------------- RESPONSIVE LAYOUT --------------------------- */
+
+@media (orientation: portrait) {
+
+    #about-container {
+        overflow: auto;
+        justify-content: unset;
+        align-items: center;
+    }
+
+    #vs-code-container {
+        min-width: 1200px;
+        height: calc(100% - 2rem);
+    }
+
+    /**
+
+    // MOBILE VIEW (BUT THE ABOVE ONE IS BETTER)
+
+    #other-buttons-popup {
+        width: 80%;
+    }
+
+    #vs-code-window {
+        flex-direction: row;
+        flex-wrap: wrap;
+        border-radius: 0rem 0rem 1rem 1rem;
+    }
+
+    #menu-panel {
+        width: calc(100% - 2rem);
+        height: 3%;
+        border-radius: 0rem;
+        flex-direction: row;
+        border-right: none;
+        border-bottom: 0.05rem solid rgb(30, 30, 30);
+    }
+
+    #menu-panel div{
+        flex-direction: row;
+        display: flex;
+        align-items: center;
+    }
+
+    #left-panel {
+        width: 30%;
+        border-bottom-left-radius: 1rem;
+        height: calc(100% - 3.05rem);
+    }
+
+    #right-panel {
+        width: calc(70% - 0.05rem);
+        height: calc(100% - 3.05rem);
+    }
+
+    .number-column{
+        width: 10%;
+    }
+
+    .readme {
+        justify-content: unset;
+        align-items: unset;
+        display: flex;
+        height: fit-content;
+        padding: 2rem;
+    }
+
+    #terminal-options {
+        flex-wrap: nowrap;
+        display: flex;
+        overflow: auto;
+    }
+
+    */
+}
