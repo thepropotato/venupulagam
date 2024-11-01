@@ -5,7 +5,7 @@ Hey there, this portfolio is built purely using React JS and CSS. The portfolio 
 
 # Hero section
 
-![alt text](https://github.com/thepropotato/venupulagam/blob/master/readme-images/hero.png)
+![alt text](https://github.com/thepropotato/venupulagam/blob/master/readme-images/home.png)
 
 - Hover on the silhoutte to transition to my image.
 - Click on the logo at the bottom left corner, to navigate.
