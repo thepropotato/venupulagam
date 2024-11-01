@@ -31,7 +31,7 @@ function LoadContact() {
     // SHOW THE SUCCESS MESSAGE
     const handleFormSubmit = (e) => {
         handleSubmit(e);
-        if ((showSuccessMessage === false) && state.succeeded) { // UNCOMMENT THESE LINES FOR PRODUCTION
+        if (state.succeeded) { // UNCOMMENT THESE LINES FOR PRODUCTION
             setShowSuccessMessage(true);
             document.getElementById("contact-container").style.filter = 'brightness(0.5) blur(1rem)';
             document.getElementById("contact-container").style.pointerEvents = 'none';
