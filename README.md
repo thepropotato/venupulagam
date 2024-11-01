@@ -1,70 +1,119 @@
-# Getting Started with Create React App
+# The Portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Hey there, this portfolio is built purely using React JS and CSS. The portfolio is *built responsive* (adapting to screens), but **for a better experience, viewing from a Laptop/Computer (Landscape mode) is suggested**.
+<br><br>
 
-## Available Scripts
+# Hero section
 
-In the project directory, you can run:
+![alt text](https://github.com/thepropotato/venupulagam/blob/master/readme-images/hero.png)
 
-### `npm start`
+- Hover on the silhoutte to transition to my image.
+- Click on the logo at the bottom left corner, to navigate.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+# Navigation menu
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+![alt text](https://github.com/thepropotato/venupulagam/blob/master/readme-images/menu.png)
 
-### `npm test`
+# About section
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+![alt text](https://github.com/thepropotato/venupulagam/blob/master/readme-images/about.png)
 
-### `npm run build`
+The **About** section is designed to be interactive.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- The VS code themed editor will showcase all my tech skills along with my other interests.
+- The usage is clearly mentioned in the README.md file in the editor.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+# Projects section
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+![alt text](https://github.com/thepropotato/venupulagam/blob/master/readme-images/projects.png)
 
-### `npm run eject`
+- This section fetches the latest and featured (starred) projects from my github profile and displays them to stay updated.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+![alt text](https://github.com/thepropotato/venupulagam/blob/master/readme-images/projects-open.png)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- The detailed explanations (README) of each project can be seen by clicking on the them.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+# Writings page
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+![alt text](https://github.com/thepropotato/venupulagam/blob/master/readme-images/writings.png)
 
-## Learn More
+- This section just has a link to my <a href=https://medium.com/@mosagadu>medium</a> profile, but in an immersive way. <br><br>
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+![alt text](https://github.com/thepropotato/venupulagam/blob/master/readme-images/writings-open.png)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- Hovering on the pen (or) on the arrow mark will transition the page to the above state.
 
-### Code Splitting
+# Edits page
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+![alt text](https://github.com/thepropotato/venupulagam/blob/master/readme-images/edits.png)
 
-### Analyzing the Bundle Size
+- This section features some of my photo edits, most of them are designed for mobile screens (1080x2400)
+- The mobile phone shows how the edit would look like, in an iphone.
+- There is also a link to my <a href=https://imgur.com/user/mosagadu/posts>imgur</a> profile, where you can find the latest edits of mine.
+- You can also download the images featured in this portfolio.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+# Contact page
 
-### Making a Progressive Web App
+![alt text](https://github.com/thepropotato/venupulagam/blob/master/readme-images/contact.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+The contact page features different ways to connect with me.
 
-### Advanced Configuration
+- There also is a way that you can directly send me a message. Whatever the content you enter in there, will be sent as an email to me.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+- The message functionality used in the "Contact" page is established leveraging <a href=https://formspree.io>https://formspree.io</a>
 
-### Deployment
+    Note : For the mail option to work properly, your system should have a default app for Email services.
+<br>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+<h1 id="design-choices">Design choices</h1>
 
-### `npm run build` fails to minify
+The basic idea of design of the site is quite simple. I wanted it to simple and minimalistic. So I have decided to use only 2 colors throughout. The color choice happened to be so straight forward with an idea of contrasting colors. That's why you'll predominantly see either black or white, or shades from that palette. Other colors are used sparingly, if at all.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+For the design of the landing page, I wanted it to carry my persona. Since i spend a lot of time listening to music, what better describes a melophile other than Spotify (atleast in India / atleast me) ?
+
+So the UI is heavily for the home page is heavily inspired from **Spotify**. But keeping the color choice in mind, changes were made accordingly.
+
+To carry my personality, the **rotating casette** is added in the projects page.
+
+The waving hand emoji in the contact page is used as a hook to make the users feel better while leaving the page. Watching a hand wave at them (in color, after 5 pages long monochrome), people may just feel good  and happy.
+
+The choice of fonts throughout the website is the toughest part, when asked. I spent a lot of time exploring different fonts and found a few good styles. 
+
+- Fonts used :
+    - <a href="https://www.dafont.com/valorant.font">Valorant</a>
+    - <a href="https://fonts.google.com/specimen/Outfit">Outfit</a>
+    - <a href="https://fonts.google.com/specimen/Dela+Gothic+One">Dela Gothic One</a>
+    - <a href="https://www.dafont.com/inversionz.font">Inversionz</a>
+    - <a href="https://www.dafont.com/dimitri.font">Dimitri</a>
+    - <a href="https://fonts.google.com/specimen/Bungee+Hairline">Bungee Hairline</a>
+
+- Icons used are from:
+    - <a href="https://fonts.google.com/icons">Google icons</a>
+    - <a href="https://fontawesome.com/icons">Font awesome</a> 
+<br><br>
+
+
+# Website in portrait mode
+
+As aforementioned, the website is made responsive. So for the displays in portrait mode, I wanted to suggest users to view the site in landscape mode. So when opened in a portrait mode display, the landing page will not be displayed on load. Instead you will see this.
+
+![alt text](https://github.com/thepropotato/venupulagam/blob/master/readme-images/image-7.png)
+
+Clicking on **No thanks** will take you to the home page of the website.
+The rest has almost no changes unless the casette won't be displayed in portrait mode. <br><br>
+
+# Technologies used
+
+- HTML
+- CSS
+- Python
+- JavaScript <br><br>
+
+# Queries and Feedback
+
+For any Queries and feedback please mail me at notvenupulagam@gmail.com
+
+Hope you had a good time viewing my portfolio. Have a good day.
+
+*Thank you.*
+
