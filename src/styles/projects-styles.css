@@ -269,7 +269,7 @@
 
 .project-description {
     display: -webkit-box;
-    display: flex;
+    display: -moz-box;
     -webkit-box-orient: vertical;
     box-orient: vertical;
     line-clamp: 8;
@@ -377,7 +377,7 @@
 
     .project-description {
         display: -webkit-box;
-        display: flex;
+        display: -moz-box;
         -webkit-box-orient: vertical;
         box-orient: vertical;
         -webkit-line-clamp: 4;
