@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import logo from '../assets/logo.jpg';
 import '../styles/menu-styles.css';
 
 function LoadMenu() {
@@ -70,9 +69,7 @@ function LoadMenu() {
                 </header>
             )}
 
-            <div id="menu-button" onClick={toggleNavbar}>
-                <img src={logo} alt='menu-button' />
-            </div>
+            <span class="material-symbols-outlined" id="menu-button" onClick={toggleNavbar}>menu</span>
         </div>
     );
 }

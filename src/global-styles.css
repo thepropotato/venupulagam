@@ -71,6 +71,11 @@
     z-index: -1;
 }
 
+body {
+    height: 100dvh;
+    overflow: auto;
+}
+
 #body-container{
     display: -webkit-box;
     display: -ms-flexbox;
